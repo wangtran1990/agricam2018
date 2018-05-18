@@ -1,0 +1,41 @@
+
+---Downloaded files---
+The import files for: Fluid Magazine Demo were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost/agricam
+Data file = C:\wamp\www\agricam/wp-content/uploads/rara-demo-pack/fluid-magazine-demo-content/content/fluid.xml
+Widget file = C:\wamp\www\agricam/wp-content/uploads/rara-demo-pack/fluid-magazine-demo-content/content/fluid.wie
+Customizer file = C:\wamp\www\agricam/wp-content/uploads/rara-demo-pack/fluid-magazine-demo-content/content/fluid.dat
+
+---Importing content---
+[ERROR] Failed to import "girls-567779_1920(1)" (Đa phương tiện)
+[ERROR] Failed to import "pexels-photo-291762(1)" (Đa phương tiện)
+[ERROR] Failed to import "fashion-beauty-model-portrait" (Đa phương tiện)
+[ERROR] Failed to import "woman-1209584_1920(1)" (Đa phương tiện)
+[ERROR] Failed to import "pexels-photo-47401(1)" (Đa phương tiện)
+[ERROR] Failed to import "pexels-photo-27696(1)" (Đa phương tiện)
+[ERROR] Failed to import "pexels-photo(1)" (Đa phương tiện)
+[ERROR] Failed to import "pexels-photo-247287(2)" (Đa phương tiện)
+[ERROR] Failed to import "chain-784422_1920(1)" (Đa phương tiện)
+[ERROR] Failed to import "perfume-420174_1920(1)" (Đa phương tiện)
+[ERROR] Failed to import "pexels-photo(2)(1)" (Đa phương tiện)
+[ERROR] Failed to import "shoes-211424_1920(1)" (Đa phương tiện)
+[ERROR] Failed to import "pretty-woman-635258_1920(1)" (Đa phương tiện)
+[ERROR] Failed to import "pexels-photo-265888(1)" (Đa phương tiện)
+[ERROR] Failed to import "pexels-photo-305555(1)" (Đa phương tiện)
+[ERROR] Failed to import "girl-1364005_1920(1)" (Đa phương tiện)
+[ERROR] Failed to import "girl-1828536_1920(1)" (Đa phương tiện)
+[ERROR] Failed to import "r_blogxpsog-leo-rivas-micoud (1)" (Đa phương tiện)
+[ERROR] Failed to import "image-1" (Đa phương tiện)
+[ERROR] Failed to import "image-2" (Đa phương tiện)
+[ERROR] Failed to import "image-3" (Đa phương tiện)
+[ERROR] Failed to import "image-5" (Đa phương tiện)
+[ERROR] Failed to import "image-6" (Đa phương tiện)
+[ERROR] Failed to import "image-7" (Đa phương tiện)
+[ERROR] Failed to import "image-8" (Đa phương tiện)
+[ERROR] Failed to import "keeping eye on time" (Đa phương tiện)
+[ERROR] Failed to import "image-5" (Đa phương tiện)
+[ERROR] Failed to import "image-3" (Đa phương tiện)
+
+Max execution time after content import = 300
