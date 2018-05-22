@@ -23,10 +23,10 @@
 define('DB_NAME', 'id5643107_agricam_demo_db');
 
 /** MySQL database username */
-define('DB_USER', 'id5643107_admin');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'admin');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

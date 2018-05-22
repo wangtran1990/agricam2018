@@ -1148,10 +1148,6 @@ function numinous_footer_bottom(){
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>.
                     <?php } ?>
                 </span>
-				<span class="by">
-                <a href="<?php echo esc_url( 'http://raratheme.com/wordpress-themes/numinous/' ); ?>" rel="author" target="_blank"><?php echo esc_html__( 'Numinous by Rara Theme', 'numinous' ); ?></a>.
-                <?php printf( esc_html__( 'Powered by %s', 'numinous' ), '<a href="'. esc_url( __( 'https://wordpress.org/', 'numinous' ) ) .'" target="_blank">WordPress</a>' ); ?>.
-                </span>
 			</div>
 		</div>
 	</div>

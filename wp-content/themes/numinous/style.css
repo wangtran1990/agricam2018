@@ -151,7 +151,12 @@ svg:not(:root) {
 }
 
 figure {
-	margin: 1em 40px;
+	margin: 1em 0px;
+}
+
+figure .gallery-icon img {
+	width: 100%;
+	height: auto;
 }
 
 hr {
@@ -271,7 +276,7 @@ button,
 input,
 select,
 textarea {
-	color: #8d8d8d;
+	color: black;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	line-height: 24px;
@@ -492,6 +497,10 @@ textarea {
 	width: 100%;
 }
 
+#masthead .custom-logo {
+	width: 150px;
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -546,7 +555,7 @@ a:active {
 	display: block;
 	font-size: 14px;
 	line-height: 17px;
-	color: #222;
+	color: white;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 17px 0;
@@ -560,7 +569,7 @@ a:active {
 	top:100%;
 	left: -999em;
 	z-index: 99999;
-	background: #fff;
+	background: rgb(25, 166, 249);
 	text-align: left;
 }
 
@@ -1130,6 +1139,15 @@ reset ending
 	margin-right: 3px;
 	margin-bottom: 3px;
 }
+.slider-section .lslide, img {
+	width: 100%;
+}
+.slider-section .clone img {
+	width: 100%;
+}
+.slider-section .entry-title a {
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
 .category.lifestyle{
 	background: #00a1e4;
 }
@@ -1355,7 +1373,6 @@ reset ending
 	top: 100%;
 	width: 52px;
 	height: 1px;
-	background: #ee9f1e;
 	left: 0;
 
 }
@@ -1577,9 +1594,13 @@ reset ending
 	color: #343434;
 	text-transform: uppercase;
 	font-weight: 700;
-	border-bottom: 1px solid #e3e3e3;
+	border-bottom: 3px solid rgb(25, 166, 249);
 	padding: 0 30px 12px;
 	margin: 0 -30px 32px;
+}
+
+#secondary .search-field{
+	width: 135px;
 }
 
 .widget.widget_numinous_recent_post ul,
@@ -1965,6 +1986,9 @@ reset ending
 	text-transform: uppercase;
 }
 
+.featured-category .entry-title,.category a {
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
 
 
 /*footer style*/
@@ -2061,6 +2085,10 @@ reset ending
 	color: #fff;
 	line-height: 20px;
 	font-size: 16px;
+}
+
+.site-footer .textwidget p{
+	color: white;
 }
 
 .footer-b .site-info{

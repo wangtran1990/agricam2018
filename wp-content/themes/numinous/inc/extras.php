@@ -71,7 +71,7 @@ function numinous_colored_category(){
                 foreach( $categories_list as $category ){
                 $color_code = get_theme_mod( 'numinous_category_color_' . $category->term_id );
                     if ( $color_code ) {
-                       $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" style="background:' . esc_attr( $color_code ) . '" rel="category tag">'. esc_html( $category->cat_name ) .'</a>';
+                       $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . ' rel="category tag">'. esc_html( $category->cat_name ) .'</a>';
                     }else{
                        $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '"  rel="category tag">' . esc_html( $category->cat_name ) . '</a>';
                     }
@@ -306,7 +306,7 @@ function numinous_get_social_links(){
 		<?php } if( $youtube ){ ?>
             <li><a href="<?php echo esc_url( $youtube ); ?>" class="fa fa-youtube" target="_blank" title="<?php esc_attr_e( 'YouTube', 'numinous' );?>"></a></li>
         <?php } if( $ok ){?>
-            <li><a href="<?php echo esc_url( $ok );?>" class="fa fa-odnoklassniki" target="_blank" title="<?php esc_attr_e( 'OK', 'numinous' ); ?>"></a></li>
+            <li><a href="<?php echo esc_url( $ok );?>" class="fa fa-envelope-o" target="_blank" title="<?php esc_attr_e( 'eMail', 'numinous' ); ?>"></a></li>
 		<?php } if( $vk ){?>
             <li><a href="<?php echo esc_url( $vk );?>" class="fa fa-vk" target="_blank" title="<?php esc_attr_e( 'VK', 'numinous' ); ?>"></a></li>
 		<?php } if( $xing ){?>

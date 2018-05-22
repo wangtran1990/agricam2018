@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the MapPress Easy Google Maps package.
 msgid ""
 msgstr ""
-"Project-Id-Version: MapPress Easy Google Maps 2.48.4\n"
+"Project-Id-Version: MapPress Easy Google Maps 2.48.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mappress-google-maps-for-wordpress\n"
-"POT-Creation-Date: 2018-03-22 18:49:21+00:00\n"
+"POT-Creation-Date: 2018-05-19 00:05:23+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -57,7 +57,7 @@ msgstr ""
 msgid "Map Title"
 msgstr ""
 
-#: forms/map_media.php:20 languages/texts.php:51 mappress.php:621
+#: forms/map_media.php:20 languages/texts.php:51 mappress.php:624
 #: mappress_map.php:591
 msgid "Untitled"
 msgstr ""
@@ -98,43 +98,43 @@ msgstr ""
 msgid "Size"
 msgstr ""
 
-#: languages/texts.php:20 mappress.php:159
+#: languages/texts.php:20 mappress.php:160
 msgid "Version"
 msgstr ""
 
-#: languages/texts.php:21 mappress.php:167
+#: languages/texts.php:21 mappress.php:168
 msgid "Documentation"
 msgstr ""
 
-#: languages/texts.php:22 mappress.php:168
+#: languages/texts.php:22 mappress.php:169
 msgid "Support"
 msgstr ""
 
-#: languages/texts.php:23 mappress.php:170
+#: languages/texts.php:23 mappress.php:171
 msgid "Upgrade to MapPress Pro"
 msgstr ""
 
-#: languages/texts.php:24 mappress.php:449
+#: languages/texts.php:24 mappress.php:451
 msgid "MapPress database tables are missing.  Please deactivate the plugin and activate it again to fix this."
 msgstr ""
 
-#: languages/texts.php:25 mappress.php:454
+#: languages/texts.php:25 mappress.php:456
 msgid "WARNING: MapPress now requires WordPress 3.2 or higher.  Please upgrade before using MapPress."
 msgstr ""
 
-#: languages/texts.php:26 mappress.php:459
+#: languages/texts.php:26 mappress.php:461
 msgid "WARNING: MapPress is not compfatible with the WP-Geo plugin.  Please deactivate or uninstall WP-Geo before using MapPress."
 msgstr ""
 
-#: languages/texts.php:27 mappress.php:464
+#: languages/texts.php:27 mappress.php:466
 msgid "A Google Maps API key is required"
 msgstr ""
 
-#: languages/texts.php:28 mappress.php:464
+#: languages/texts.php:28 mappress.php:466
 msgid "Please update your"
 msgstr ""
 
-#: languages/texts.php:29 mappress.php:464
+#: languages/texts.php:29 mappress.php:466
 msgid "MapPress Settings"
 msgstr ""
 
@@ -150,7 +150,7 @@ msgstr ""
 msgid "One of the addresses could not be found."
 msgstr ""
 
-#: languages/texts.php:33 mappress.php:611
+#: languages/texts.php:33 mappress.php:614
 msgid "Google cannot return directions between those addresses.  There is no route between them or the routing information is not available."
 msgstr ""
 
@@ -162,7 +162,7 @@ msgstr ""
 msgid "Directions"
 msgstr ""
 
-#: languages/texts.php:36 mappress.php:612
+#: languages/texts.php:36 mappress.php:615
 msgid "Error reading KML file"
 msgstr ""
 
@@ -170,11 +170,11 @@ msgstr ""
 msgid "Loading..."
 msgstr ""
 
-#: languages/texts.php:38 mappress.php:615
+#: languages/texts.php:38 mappress.php:618
 msgid "No matching address"
 msgstr ""
 
-#: languages/texts.php:39 mappress.php:616
+#: languages/texts.php:39 mappress.php:619
 msgid "Unable to get your location"
 msgstr ""
 
@@ -207,7 +207,7 @@ msgstr ""
 msgid "Delete this POI?"
 msgstr ""
 
-#: languages/texts.php:48 mappress.php:618
+#: languages/texts.php:48 mappress.php:621
 msgid "Delete this map?"
 msgstr ""
 
@@ -215,7 +215,7 @@ msgstr ""
 msgid "Please save the map first"
 msgstr ""
 
-#: languages/texts.php:50 mappress.php:620
+#: languages/texts.php:50 mappress.php:623
 msgid "Shape"
 msgstr ""
 
@@ -652,7 +652,7 @@ msgstr ""
 msgid "Reset Defaults"
 msgstr ""
 
-#: languages/texts.php:160 mappress.php:153
+#: languages/texts.php:160 mappress.php:154
 msgid "Settings"
 msgstr ""
 
@@ -1024,19 +1024,19 @@ msgstr ""
 msgid "Chris Richardson"
 msgstr ""
 
-#: mappress.php:613
+#: mappress.php:616
 msgid "Loading"
 msgstr ""
 
-#: mappress.php:614
+#: mappress.php:617
 msgid "%d results shown.  Zoom in to see more."
 msgstr ""
 
-#: mappress.php:617
+#: mappress.php:620
 msgid "Are you sure you want to delete?"
 msgstr ""
 
-#: mappress.php:619
+#: mappress.php:622
 msgid "Save changes?"
 msgstr ""
 

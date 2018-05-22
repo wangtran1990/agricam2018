@@ -4,7 +4,7 @@ Plugin Name: MapPress Easy Google Maps
 Plugin URI: http://www.wphostreviews.com/mappress
 Author URI: http://www.wphostreviews.com/mappress
 Description: MapPress makes it easy to insert Google Maps in WordPress posts and pages.
-Version: 2.48.4
+Version: 2.48.6
 Author: Chris Richardson
 Text Domain: mappress-google-maps-for-wordpress
 Thanks to all the translators and to Matthias Stasiak for his wonderful icons (http://code.google.com/p/google-maps-icons/)
@@ -34,7 +34,7 @@ if (is_dir(dirname( __FILE__ ) . '/pro')) {
 }
 
 class Mappress {
-	const VERSION = '2.48.4';
+	const VERSION = '2.48.6';
 
 	static
 		$baseurl,
@@ -89,7 +89,8 @@ class Mappress {
 
 		// Remove API loaded by other plugins
 		if (self::$options->deregister) {
-			add_action('wp_print_footer_scripts', array(__CLASS__, 'deregister'), -1);  // wp_print_scripts for header
+			add_action('wp_print_footer_scripts', array(__CLASS__, 'deregister'), -1);
+			add_action('admin_print_footer_scripts', array(__CLASS__, 'deregister'), -1);
 			add_action('wp_print_scripts', array(__CLASS__, 'deregister'), -1);
 		}
 
@@ -343,9 +344,10 @@ class Mappress {
 	*/
 	static function wp_enqueue_scripts() {
 		// Load the default CSS from the plugin directory
+		// Mappress CSS from plugin directory
 		wp_enqueue_style('mappress', self::$baseurl . '/css/mappress.css', null, self::VERSION);
 
-		// If a 'mappress.css' exists in the theme directory, load that afterwards
+		// Mappress CSS from theme directory
 		if ( @file_exists( get_stylesheet_directory() . '/mappress.css' ) )
 			$file = get_stylesheet_directory_uri() . '/mappress.css';
 		elseif ( @file_exists( get_template_directory() . '/mappress.css' ) )
@@ -379,7 +381,7 @@ class Mappress {
 				wp_enqueue_code_editor(array( 'type' => 'php' ));
 		}
 
-		// CSS
+		// Mappress CSS
 		if (in_array($hook, self::$pages) || $editing) {
 			wp_enqueue_style('mappress', self::$baseurl . '/css/mappress.css', null, self::VERSION);
 			wp_enqueue_style('mappress-admin', self::$baseurl . '/css/mappress_admin.css', null, self::VERSION);
@@ -528,7 +530,7 @@ class Mappress {
 			global $post;
 			$maps = Mappress_Map::get_list($post->ID, 'ids');
 			$map = ($maps) ? Mappress_Map::get($maps[0]) : null;
-			$atts['search'] = ($map && $map->pois) ? $map->pois[0]->point : null;
+			$atts['center'] = ($map && $map->pois) ? $map->pois[0]->point['lat'] . ',' . $map->pois[0]->point['lng'] : null;
 		}
 
 		return $atts;
@@ -552,13 +554,14 @@ class Mappress {
 	static function load($type = null) {
 		if (self::$loaded)
 			return;
+		else
 		self::$loaded = true;
 
 		$dev = self::dev();
 		$version = (self::$pro) ? self::VERSION . 'PRO' : self::VERSION;
 		$footer = self::footer();
 
-		$apiversion = ($dev) ? 'v=3' : 'v=3';	// 3.exp removed, too many bugs in 3.32
+		$apiversion = ($dev) ? 'v=3.31' : 'v=3.31';	// 3.exp removed, too many bugs in 3.32
 		$apikey = "&key=" . self::get_api_keys()->browser;
 		$libstring = ($type == 'editor') ? '&libraries=places,drawing' : '&libraries=places';
 
